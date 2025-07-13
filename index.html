@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tleukzh Business School - The Future of Entrepreneurship</title>
+<script src="https://cdn.tailwindcss.com/3.4.16"></script>
+<script>tailwind.config={theme:{extend:{colors:{primary:'#3176FF',secondary:'#FFD700'},borderRadius:{'none':'0px','sm':'4px',DEFAULT:'8px','md':'12px','lg':'16px','xl':'20px','2xl':'24px','3xl':'32px','full':'9999px','button':'8px'}}}}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" rel="stylesheet">
+<style>
+:where([class^="ri-"])::before { content: "\f3c2"; }
+body { font-family: 'Inter', sans-serif; }
+.gradient-bg { background: linear-gradient(135deg, #000000 0%, #1a1a1a 50%, #000000 100%); }
+.gold-gradient { background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%); }
+.module-card { transition: all 0.3s ease; }
+.module-card:hover { transform: translateY(-8px); box-shadow: 0 20px 40px rgba(255, 215, 0, 0.2); }
+.floating-animation { animation: float 6s ease-in-out infinite; }
+@keyframes float { 0%, 100% { transform: translateY(0px); } 50% { transform: translateY(-20px); } }
+</style>
+</head>
+<body class="bg-black text-white overflow-x-hidden">
+<nav class="fixed w-full top-0 z-50 bg-black/80 backdrop-blur-md border-b border-secondary/20">
+<div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
+<img src="logo.png" alt="logo.png" class="h-10" />
+<div class="hidden md:flex items-center space-x-8">
+<a href="#about" class="text-white hover:text-secondary transition-colors cursor-pointer">About</a>
+<a href="#modules" class="text-white hover:text-secondary transition-colors cursor-pointer">Modules</a>
+<a href="#difference" class="text-white hover:text-secondary transition-colors cursor-pointer">Why Us</a>
+<a href="#contact" class="text-white hover:text-secondary transition-colors cursor-pointer">Contact</a>
+</div>
+<button class="md:hidden w-8 h-8 flex items-center justify-center cursor-pointer" id="menu-toggle">
+<i class="ri-menu-line text-secondary text-xl"></i>
+</button>
+</div>
+<div class="md:hidden bg-black/95 px-4 py-4 space-y-4 hidden" id="mobile-menu">
+<a href="#about" class="block text-white hover:text-secondary transition-colors cursor-pointer">About</a>
+<a href="#modules" class="block text-white hover:text-secondary transition-colors cursor-pointer">Modules</a>
+<a href="#difference" class="block text-white hover:text-secondary transition-colors cursor-pointer">Why Us</a>
+<a href="#contact" class="block text-white hover:text-secondary transition-colors cursor-pointer">Contact</a>
+</div>
+</nav>
+<section class="gradient-bg min-h-screen flex items-center justify-center relative overflow-hidden pt-20">
+<div class="absolute inset-0 opacity-10">
+<div class="floating-animation absolute top-20 left-10 w-32 h-32 bg-secondary/20 rounded-full blur-xl"></div>
+<div class="floating-animation absolute bottom-20 right-10 w-48 h-48 bg-secondary/10 rounded-full blur-2xl" style="animation-delay: -3s;"></div>
+</div>
+<div class="max-w-4xl mx-auto px-4 text-center relative z-10">
+<div class="font-['Pacifico'] text-6xl md:text-8xl text-secondary mb-6 floating-animation">Tleukzh Business School</div>
+<p class="text-gray-400 text-lg mb-2"></p>
+<h1 class="text-4xl md:text-6xl font-bold mb-8 leading-tight">
+Кәсіпкерліктің<span class="text-secondary"> Болашағы</span><br>
+Бүгіннен басталады
+</h1>
+<p class="text-xl text-gray-300 mb-12 max-w-2xl mx-auto">
+Заманауи кәсіпкер үшін жасалған 6 модульден тұратын толық бағдарлама арқылы ең қажетті бизнес дағдыларын меңгеріңіз.
+</p>
+<div class="flex flex-col sm:flex-row gap-4 justify-center">
+<button onclick="document.getElementById('webinar-form').scrollIntoView({behavior: 'smooth', block: 'center'})" class="gold-gradient text-black px-8 py-4 !rounded-button font-semibold text-lg hover:shadow-lg hover:shadow-secondary/30 transition-all cursor-pointer">
+Тегін консультация алыңыз
+</button>
+<button class="border-2 border-secondary text-secondary px-8 py-4 !rounded-button font-semibold text-lg hover:bg-secondary hover:text-black transition-all cursor-pointer">
+Үйренуді бастаймын
+</button>
+</div>
+</div>
+</section>
+<section id="about" class="py-20 bg-gray-900">
+<div class="max-w-6xl mx-auto px-4">
+<div class="grid md:grid-cols-2 gap-12 items-center">
+<div>
+<h2 class="text-4xl font-bold mb-6">Tleukzh <span class="text-secondary"> Business School</span> туралы</h2>
+<p class="text-gray-300 text-lg mb-6 leading-relaxed">
+Біз — дәстүрлі бизнес теориясы мен заманауи цифрлық кәсіпкерліктің арасын жалғайтын заманауи бизнес-білім платформасымыз. Біздің миссиямыз — келесі буын кәсіпкерлерін бірден нәтиже беретін нақты, практикалық дағдылармен қамтамасыз ету.</p>
+<p class="text-gray-300 text-lg leading-relaxed">
+Бірнеше табысты бизнесті құрған және дамытқан сала мамандары негізін қалаған біздің платформа қазіргі бәсекелі нарықта жетістікке жету үшін не қажет екенін жақсы түсінеді.
+
+</p>
+</div>
+<div class="space-y-6">
+<div class="bg-black/50 p-6 rounded-xl border border-secondary/20">
+<div class="w-12 h-12 flex items-center justify-center bg-secondary/20 rounded-lg mb-4">
+<i class="ri-trophy-line text-secondary text-xl"></i>
+</div>
+<h3 class="text-xl font-semibold mb-2">Шынайы бизнес тәжірибе</h3>
+<p class="text-gray-400">Миллион долларлық бизнесті нөлден бастап құрған кәсіпкерлерден үйреніңіз.</p>
+</div>
+<div class="bg-black/50 p-6 rounded-xl border border-secondary/20">
+<div class="w-12 h-12 flex items-center justify-center bg-secondary/20 rounded-lg mb-4">
+<i class="ri-user-star-line text-secondary text-xl"></i>
+</div>
+<h3 class="text-xl font-semibold mb-2">Жеке наставничество</h3>
+<p class="text-gray-400">Оқыту жолыңызда сала мамандарынан жеке бағыт-бағдар алыңыз.</p>
+</div>
+<div class="bg-black/50 p-6 rounded-xl border border-secondary/20">
+<div class="w-12 h-12 flex items-center justify-center bg-secondary/20 rounded-lg mb-4">
+<i class="ri-line-chart-line text-secondary text-xl"></i>
+</div>
+<h3 class="text-xl font-semibold mb-2">Дәлелденген нәтижелер</h3>
+<p class="text-gray-400">Нарықта 200+ табысты кәсіпкер.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="modules" class="py-20 bg-black">
+<div class="max-w-6xl mx-auto px-4">
+<div class="text-center mb-16">
+<h2 class="text-4xl font-bold mb-4">Біздің <span class="text-secondary">6 Нәтижелі</span> Модульдер</h2>
+<p class="text-gray-300 text-xl max-w-3xl mx-auto">
+Бүгінгі цифрлық экономикаға бейімделген кешенді оқу бағдарламамыз арқылы ең сұранысқа ие бизнес дағдыларын меңгеру.
+</p>
+</div>
+<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+<div class="module-card bg-gray-900 p-8 rounded-2xl border border-secondary/20 hover:border-secondary/50 cursor-pointer" onclick="openModuleDetails('dropshipping-modal')">
+<div class="flex items-center mb-6">
+<span class="text-3xl font-bold text-secondary mr-4">01</span>
+<img src="https://readdy.ai/api/search-image?query=icon%2C%203D%20cartoon%20dropshipping%20box%20with%20global%20shipping%20elements%2C%20the%20icon%20should%20take%20up%2070%25%20of%20the%20frame%2C%20vibrant%20colors%20with%20soft%20gradients%2C%20minimalist%20design%2C%20smooth%20rounded%20shapes%2C%20subtle%20shading%2C%20no%20outlines%2C%20centered%20composition%2C%20isolated%20on%20white%20background%2C%20playful%20and%20friendly%20aesthetic%2C%20isometric%20perspective%2C%20high%20detail%20quality%2C%20clean%20and%20modern%20look%2C%20single%20object%20focus&width=80&height=80&seq=dropship1&orientation=squarish" alt="Dropshipping" class="w-16 h-16 rounded-lg object-cover">
+</div>
+<h3 class="text-2xl font-semibold mb-4">Dropshipping</h3>
+<p class="text-gray-400 leading-relaxed">
+Қоймада тауар ұстамай-ақ, жаһандық жеткізушілерді пайдалана отырып, өнімге негізделген бизнесті құруды үйрену.
+</p>
+</div>
+
+<div id="dropshipping-modal" class="fixed inset-0 z-50 hidden">
+  <div class="absolute inset-0 bg-black/80 backdrop-blur-sm"></div>
+  <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[90%] max-w-2xl bg-gray-900 rounded-2xl p-8">
+    <div class="flex justify-between items-start mb-6">
+      <div class="flex items-center">
+        <span class="text-3xl font-bold text-secondary mr-4">01</span>
+        <h3 class="text-2xl font-semibold">Dropshipping</h3>
+      </div>
+      <button onclick="closeModuleDetails('dropshipping-modal')" class="text-gray-400 hover:text-white">
+        <i class="ri-close-line text-2xl"></i>
+      </button>
+    </div>
+    <div class="space-y-6">
+      <div>
+        <h4 class="text-lg font-semibold text-secondary mb-3">Курсқа шолу</h4>
+        <p class="text-gray-300">Дропшиппинг бизнесін нөлден бастап табысты құру шеберлігін меңгеру.
+Бұл кешенді модуль нарықты зерттеуден бастап, бизнесті масштабтауға дейінгі барлық кезеңдерді қамтиды.</p>
+      </div>
+      <div>
+        <h4 class="text-lg font-semibold text-secondary mb-3">Сіз не үйренесіз?</h4>
+        <ul class="space-y-3">
+          <li class="flex items-start">
+            <i class="ri-check-line text-secondary mt-1 mr-2"></i>
+            <span class="text-gray-300">Өнімді зерттеу және нарықты талдау</span>
+          </li>
+          <li class="flex items-start">
+            <i class="ri-check-line text-secondary mt-1 mr-2"></i>
+            <span class="text-gray-300">Жеткізушілерді таңдау және қарым-қатынасты басқару</span>
+          </li>
+          <li class="flex items-start">
+            <i class="ri-check-line text-secondary mt-1 mr-2"></i>
+            <span class="text-gray-300">Интернет-дүкенді құру және жетілдіру</span>
+          </li>
+          <li class="flex items-start">
+            <i class="ri-check-line text-secondary mt-1 mr-2"></i>
+            <span class="text-gray-300">Маркетинг және клиент тарту</span>
+          </li>
+          <li class="flex items-start">
+            <i class="ri-check-line text-secondary mt-1 mr-2"></i>
+            <span class="text-gray-300">Тапсырысты орындау және клиенттерге қызмет көрсету</span>
+          </li>
+          <li class="flex items-start">
+            <i class="ri-check-line text-secondary mt-1 mr-2"></i>
+            <span class="text-gray-300">Бизнесті масштабтау және автоматтандыру</span>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-lg font-semibold text-secondary mb-3">Ұзақтығы</h4>
+        <p class="text-gray-300">2 ай</p>
+      </div>
+      <button onclick="location.href='#contact'" class="w-full gold-gradient text-black py-3 !rounded-button font-semibold hover:shadow-lg hover:shadow-secondary/30 transition-all">
+       Қазір тіркеліңіз
+      </button>
+    </div>
+  </div>
+</div>
+
+<div class="module-card bg-gray-900 p-8 rounded-2xl border border-secondary/20 hover:border-secondary/50 cursor-pointer">
+<div class="flex items-center mb-6">
+<span class="text-3xl font-bold text-secondary mr-4">02</span>
+<img src="https://readdy.ai/api/search-image?query=icon%2C%203D%20cartoon%20Kazakhstan%20e-commerce%20platform%20interface%20with%20shopping%20cart%20and%20payment%20elements%2C%20the%20icon%20should%20take%20up%2070%25%20of%20the%20frame%2C%20vibrant%20colors%20with%20soft%20gradients%2C%20minimalist%20design%2C%20smooth%20rounded%20shapes%2C%20subtle%20shading%2C%20no%20outlines%2C%20centered%20composition%2C%20isolated%20on%20white%20background%2C%20playful%20and%20friendly%20aesthetic%2C%20isometric%20perspective%2C%20high%20detail%20quality%2C%20clean%20and%20modern%20look%2C%20single%20object%20focus&width=80&height=80&seq=kaspi1&orientation=squarish" alt="Kaspi Store" class="w-16 h-16 rounded-lg object-cover">
+</div>
+<h3 class="text-2xl font-semibold mb-4">Каспи</h3>
+<p class="text-gray-400 leading-relaxed">
+Қазақстандағы ең танымал Kaspi.kz электронды сауда платформасы арқылы сатуды меңгеру.
+Оптимизация, маркетинг және клиент тарту стратегияларын үйрену.</p>
+
+
+</div>
+<div class="module-card bg-gray-900 p-8 rounded-2xl border border-secondary/20 hover:border-secondary/50 cursor-pointer">
+<div class="flex items-center mb-6">
+<span class="text-3xl font-bold text-secondary mr-4">03</span>
+<img src="https://readdy.ai/api/search-image?query=icon%2C%203D%20cartoon%20personal%20brand%20elements%20with%20social%20media%20icons%20and%20influencer%20figure%2C%20the%20icon%20should%20take%20up%2070%25%20of%20the%20frame%2C%20vibrant%20colors%20with%20soft%20gradients%2C%20minimalist%20design%2C%20smooth%20rounded%20shapes%2C%20subtle%20shading%2C%20no%20outlines%2C%20centered%20composition%2C%20isolated%20on%20white%20background%2C%20playful%20and%20friendly%20aesthetic%2C%20isometric%20perspective%2C%20high%20detail%20quality%2C%20clean%20and%20modern%20look%2C%20single%20object%20focus&width=80&height=80&seq=brand1&orientation=squarish" alt="Personal Brand" class="w-16 h-16 rounded-lg object-cover">
+</div>
+<h3 class="text-2xl font-semibold mb-4">Личный Бренд</h3>
+<p class="text-gray-400 leading-relaxed">
+Әлеуметтік желілерде сатылым мен сенімге негізделген мықты жеке бренд қалыптастыру.
+Контент жасау, аудитория жинау және монетизация стратегияларын үйрену.
+</p>
+</div>
+<div class="module-card bg-gray-900 p-8 rounded-2xl border border-secondary/20 hover:border-secondary/50 cursor-pointer">
+<div class="flex items-center mb-6">
+<span class="text-3xl font-bold text-secondary mr-4">04</span>
+<img src="https://readdy.ai/api/search-image?query=icon%2C%203D%20cartoon%20AI%20chatbot%20with%20speech%20bubbles%20and%20automation%20elements%2C%20the%20icon%20should%20take%20up%2070%25%20of%20the%20frame%2C%20vibrant%20colors%20with%20soft%20gradients%2C%20minimalist%20design%2C%20smooth%20rounded%20shapes%2C%20subtle%20shading%2C%20no%20outlines%2C%20centered%20composition%2C%20isolated%20on%20white%20background%2C%20playful%20and%20friendly%20aesthetic%2C%20isometric%20perspective%2C%20high%20detail%20quality%2C%20clean%20and%20modern%20look%2C%20single%20object%20focus&width=80&height=80&seq=chatbot1&orientation=squarish" alt="Chat-bot Development" class="w-16 h-16 rounded-lg object-cover">
+</div>
+<h3 class="text-2xl font-semibold mb-4">Жасанды интеллект (чат-бот)</h3>
+<p class="text-gray-400 leading-relaxed">
+Сатылым мен клиенттерге қолдауды заманауи жасанды интеллект чат-боттары арқылы автоматтандыру.
+Бот дизайнын, диалог құрылымдарын және бизнес жүйелермен интеграцияны үйрену.
+</p>
+</div>
+<div class="module-card bg-gray-900 p-8 rounded-2xl border border-secondary/20 hover:border-secondary/50 cursor-pointer">
+<div class="flex items-center mb-6">
+<span class="text-3xl font-bold text-secondary mr-4">05</span>
+<img src="https://readdy.ai/api/search-image?query=icon%2C%203D%20cartoon%20digital%20production%20studio%20with%20content%20creation%20elements%20and%20media%20tools%2C%20the%20icon%20should%20take%20up%2070%25%20of%20the%20frame%2C%20vibrant%20colors%20with%20soft%20gradients%2C%20minimalist%20design%2C%20smooth%20rounded%20shapes%2C%20subtle%20shading%2C%20no%20outlines%2C%20centered%20composition%2C%20isolated%20on%20white%20background%2C%20playful%20and%20friendly%20aesthetic%2C%20isometric%20perspective%2C%20high%20detail%20quality%2C%20clean%20and%20modern%20look%2C%20single%20object%20focus&width=80&height=80&seq=producing1&orientation=squarish" alt="Producing" class="w-16 h-16 rounded-lg object-cover">
+</div>
+<h3 class="text-2xl font-semibold mb-4">Продюсирование</h3>
+<p class="text-gray-400 leading-relaxed">
+Сандық сарапшылар мен онлайн жобаларды басқару, қалыптастыру және масштабтау тәсілдерін меңгеру.
+Жобаны басқару, команда құру және бизнесті өсіру шеберлігін үйрену.</p>
+</div>
+<div class="module-card bg-gray-900 p-8 rounded-2xl border border-secondary/20 hover:border-secondary/50 cursor-pointer">
+<div class="flex items-center mb-6">
+<span class="text-3xl font-bold text-secondary mr-4">06</span>
+<img src="https://readdy.ai/api/search-image?query=icon%2C%203D%20cartoon%20digital%20marketing%20elements%20with%20analytics%20charts%20and%20growth%20arrows%2C%20the%20icon%20should%20take%20up%2070%25%20of%20the%20frame%2C%20vibrant%20colors%20with%20soft%20gradients%2C%20minimalist%20design%2C%20smooth%20rounded%20shapes%2C%20subtle%20shading%2C%20no%20outlines%2C%20centered%20composition%2C%20isolated%20on%20white%20background%2C%20playful%20and%20friendly%20aesthetic%2C%20isometric%20perspective%2C%20high%20detail%20quality%2C%20clean%20and%20modern%20look%2C%20single%20object%20focus&width=80&height=80&seq=marketing1&orientation=squarish" alt="Digital Marketing" class="w-16 h-16 rounded-lg object-cover">
+</div>
+<h3 class="text-2xl font-semibold mb-4">Тик Ток (Ванхун)</h3>
+<p class="text-gray-400 leading-relaxed">
+ТикТок-та жеке бренд қалыптастырып, вирус контент жасау мен аудитория жинау тәсілдерін үйрену.
+Қытайлық "Ванхун" моделіне сүйене отырып, танымалдылықты табыс көзіне айналдыру.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="difference" class="py-20 bg-gray-900">
+<div class="max-w-6xl mx-auto px-4">
+<div class="text-center mb-16">
+<h2 class="text-4xl font-bold mb-4">Бізді басқалардан <span class="text-secondary">Ерекшелейтін не?</span></h2>
+<p class="text-gray-300 text-xl max-w-3xl mx-auto">
+Біз тек теорияны үйретпейміз. Біз кәсіпкерлік табысқа жеткізетін толық экожүйені ұсынамыз.</p>
+</div>
+<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+<div class="text-center p-8 bg-black/50 rounded-2xl border border-secondary/20">
+<div class="w-16 h-16 flex items-center justify-center bg-secondary/20 rounded-full mx-auto mb-6">
+<i class="ri-award-line text-secondary text-2xl"></i>
+</div>
+<h3 class="text-xl font-semibold mb-4">Golden Standard Curriculum</h3>
+<p class="text-gray-400">
+Біздің оқу бағдарламамыз нарықтағы соңғы трендтер мен табысты бизнес тәжірибелеріне сүйене отырып үнемі жаңартылып отырады.
+</p>
+</div>
+<div class="text-center p-8 bg-black/50 rounded-2xl border border-secondary/20">
+<div class="w-16 h-16 flex items-center justify-center bg-secondary/20 rounded-full mx-auto mb-6">
+<i class="ri-team-line text-secondary text-2xl"></i>
+</div>
+<h3 class="text-xl font-semibold mb-4">Нағыз менторлар</h3>
+<p class="text-gray-400">
+Миллиондаған теңгелік бизнестерді құрған және өсірген табысты кәсіпкерлерден үйреніңіз.</p>
+</div>
+<div class="text-center p-8 bg-black/50 rounded-2xl border border-secondary/20">
+<div class="w-16 h-16 flex items-center justify-center bg-secondary/20 rounded-full mx-auto mb-6">
+<i class="ri-route-line text-secondary text-2xl"></i>
+</div>
+<h3 class="text-xl font-semibold mb-4">Қадам-қадаммен бағыт беру</h3>
+<p class="text-gray-400">
+Біз ұсынған дәлелденген жол картасын пайдаланып, идеядан іске асыруға дейін нақты кезеңдер мен әрекетке бағытталған тапсырмалар арқылы жетіңіз.
+
+</p>
+</div>
+<div class="text-center p-8 bg-black/50 rounded-2xl border border-secondary/20">
+<div class="w-16 h-16 flex items-center justify-center bg-secondary/20 rounded-full mx-auto mb-6">
+<i class="ri-time-line text-secondary text-2xl"></i>
+</div>
+<h3 class="text-xl font-semibold mb-4">Өмір бойы қолжетімділік</h3>
+<p class="text-gray-400">
+Барлық оқу материалдарына, жаңартуларға және тек түлектерге арналған эксклюзивті қауымдастыққа өмір бойы қолжетімділік алыңыз.
+</p>
+</div>
+<div class="text-center p-8 bg-black/50 rounded-2xl border border-secondary/20">
+<div class="w-16 h-16 flex items-center justify-center bg-secondary/20 rounded-full mx-auto mb-6">
+<i class="ri-medal-line text-secondary text-2xl"></i>
+</div>
+<h3 class="text-xl font-semibold mb-4">Оқу аяқтағаны туралы сертификат</h3>
+<p class="text-gray-400">
+Курсты аяқтағаннан кейін клиенттер мен серіктестерге өз біліктілігіңізді көрсету үшін ресми сертификат алу.</p>
+</div>
+<div class="text-center p-8 bg-black/50 rounded-2xl border border-secondary/20">
+<div class="w-16 h-16 flex items-center justify-center bg-secondary/20 rounded-full mx-auto mb-6">
+<i class="ri-rocket-line text-secondary text-2xl"></i>
+</div>
+<h3 class="text-xl font-semibold mb-4">Іске қосуға қолдау</h3>
+<p class="text-gray-400">
+Get ongoing support during your business launch phase with dedicated office hours and Q&A sessions.
+</p>
+</div>
+</div>
+</div>
+</section>
+<section id="contact" class="py-20 bg-black">
+<div class="max-w-4xl mx-auto px-4">
+<div class="text-center mb-12">
+<h2 class="text-4xl font-bold mb-4">Ready to Start Your <span class="text-secondary">Journey?</span></h2>
+<p class="text-gray-300 text-xl">
+Choose your path to entrepreneurial success
+</p>
+</div>
+<div class="grid md:grid-cols-2 gap-8">
+<div class="bg-gray-900 p-8 rounded-2xl border border-secondary/20">
+<div class="text-center mb-8">
+<div class="w-16 h-16 flex items-center justify-center bg-secondary/20 rounded-full mx-auto mb-4">
+<i class="ri-play-circle-line text-secondary text-2xl"></i>
+</div>
+<h3 class="text-2xl font-semibold mb-2">Free Webinar</h3>
+<p class="text-gray-400">Get a taste of our teaching style and learn valuable business insights</p>
+</div>
+<form class="space-y-4" id="webinar-form">
+<input type="text" placeholder="Full Name" class="w-full bg-black border border-secondary/30 rounded-lg px-4 py-3 text-white placeholder-gray-500 focus:border-secondary focus:outline-none">
+<input type="email" placeholder="Email Address" class="w-full bg-black border border-secondary/30 rounded-lg px-4 py-3 text-white placeholder-gray-500 focus:border-secondary focus:outline-none">
+<input type="tel" placeholder="Phone Number" class="w-full bg-black border border-secondary/30 rounded-lg px-4 py-3 text-white placeholder-gray-500 focus:border-secondary focus:outline-none">
+<button type="submit" class="w-full gold-gradient text-black py-3 !rounded-button font-semibold hover:shadow-lg hover:shadow-secondary/30 transition-all cursor-pointer">
+Register for Free Webinar
+</button>
+</form>
+</div>
+
+
+</div>
+</section>
+<footer class="bg-gray-900 py-12 border-t border-secondary/20">
+<div class="max-w-6xl mx-auto px-4">
+<div class="grid md:grid-cols-4 gap-8">
+<div>
+<div class="font-['Pacifico'] text-2xl text-secondary mb-4">Tleukzh</div>
+<p class="text-gray-400 text-sm leading-relaxed">
+Empowering the next generation of entrepreneurs with practical business skills for the digital age.
+</p>
+</div>
+<div>
+<h4 class="text-white font-semibold mb-4">Quick Links</h4>
+<div class="space-y-2">
+<a href="#about" class="block text-gray-400 hover:text-secondary transition-colors text-sm cursor-pointer">About Us</a>
+<a href="#modules" class="block text-gray-400 hover:text-secondary transition-colors text-sm cursor-pointer">Our Modules</a>
+<a href="#difference" class="block text-gray-400 hover:text-secondary transition-colors text-sm cursor-pointer">Why Choose Us</a>
+<a href="#contact" class="block text-gray-400 hover:text-secondary transition-colors text-sm cursor-pointer">Get Started</a>
+</div>
+</div>
+<div>
+<h4 class="text-white font-semibold mb-4">Programs</h4>
+<div class="space-y-2">
+<p class="text-gray-400 text-sm">Dropshipping</p>
+<p class="text-gray-400 text-sm">Kaspi</p>
+<p class="text-gray-400 text-sm">Личный бренд</p>
+<p class="text-gray-400 text-sm">Жасанды интеллект (Чат-бот)</p>
+</div>
+</div>
+<div>
+<h4 class="text-white font-semibold mb-4">Contact Info</h4>
+<div class="space-y-2">
+<p class="text-gray-400 text-sm">info@tleukzh.com</p>
+<p class="text-gray-400 text-sm">+7 (705) 605-1531</p>
+<div class="flex space-x-4 mt-4">
+<div class="w-8 h-8 flex items-center justify-center bg-secondary/20 rounded-full cursor-pointer hover:bg-secondary/30 transition-colors">
+<i class="ri-instagram-line text-secondary text-sm"></i>
+</div>
+<div class="w-8 h-8 flex items-center justify-center bg-secondary/20 rounded-full cursor-pointer hover:bg-secondary/30 transition-colors">
+<i class="ri-telegram-line text-secondary text-sm"></i>
+</div>
+<div class="w-8 h-8 flex items-center justify-center bg-secondary/20 rounded-full cursor-pointer hover:bg-secondary/30 transition-colors">
+<i class="ri-linkedin-line text-secondary text-sm"></i>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="border-t border-secondary/20 mt-8 pt-8 text-center">
+<p class="text-gray-500 text-sm">
+© 2025 Tleukzh Business School. All rights reserved.
+</p>
+</div>
+</div>
+</footer>
+<script id="mobile-menu-toggle">
+document.addEventListener('DOMContentLoaded', function() {
+const menuToggle = document.getElementById('menu-toggle');
+const mobileMenu = document.getElementById('mobile-menu');
+menuToggle.addEventListener('click', function() {
+mobileMenu.classList.toggle('hidden');
+});
+});
+</script>
+<script id="smooth-scroll">
+document.addEventListener('DOMContentLoaded', function() {
+const links = document.querySelectorAll('a[href^="#"]');
+links.forEach(link => {
+link.addEventListener('click', function(e) {
+e.preventDefault();
+const targetId = this.getAttribute('href').substring(1);
+const targetElement = document.getElementById(targetId);
+if (targetElement) {
+const offsetTop = targetElement.offsetTop - 80;
+window.scrollTo({
+top: offsetTop,
+behavior: 'smooth'
+});
+}
+});
+});
+});
+</script>
+<script id="module-handlers">
+function openModuleDetails(modalId) {
+  document.getElementById(modalId).classList.remove('hidden');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeModuleDetails(modalId) {
+  document.getElementById(modalId).classList.add('hidden');
+  document.body.style.overflow = '';
+}
+</script>
+
+<script id="form-handlers">
+document.addEventListener('DOMContentLoaded', function() {
+const webinarForm = document.getElementById('webinar-form');
+const programForm = document.getElementById('program-form');
+function showNotification(message, type = 'success') {
+const notification = document.createElement('div');
+notification.className = `fixed top-20 right-4 z-50 p-4 rounded-lg ${type === 'success' ? 'bg-secondary text-black' : 'bg-red-500 text-white'} font-semibold shadow-lg transform translate-x-full transition-transform duration-300`;
+notification.textContent = message;
+document.body.appendChild(notification);
+setTimeout(() => {
+notification.style.transform = 'translateX(0)';
+}, 100);
+setTimeout(() => {
+notification.style.transform = 'translateX(100%)';
+setTimeout(() => {
+document.body.removeChild(notification);
+}, 300);
+}, 3000);
+}
+webinarForm.addEventListener('submit', function(e) {
+e.preventDefault();
+const formData = new FormData(this);
+showNotification('Thank you! You have been registered for our free webinar. Check your email for details.');
+this.reset();
+});
+programForm.addEventListener('submit', function(e) {
+e.preventDefault();
+const formData = new FormData(this);
+showNotification('Application submitted successfully! Our team will contact you within 24 hours.');
+this.reset();
+});
+});
+</script>
+<script id="scroll-animations">
+document.addEventListener('DOMContentLoaded', function() {
+const observerOptions = {
+threshold: 0.1,
+rootMargin: '0px 0px -50px 0px'
+};
+const observer = new IntersectionObserver(function(entries) {
+entries.forEach(entry => {
+if (entry.isIntersecting) {
+entry.target.style.opacity = '1';
+entry.target.style.transform = 'translateY(0)';
+}
+});
+}, observerOptions);
+const animatedElements = document.querySelectorAll('.module-card');
+animatedElements.forEach(el => {
+el.style.opacity = '0';
+el.style.transform = 'translateY(30px)';
+el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+observer.observe(el);
+});
+});
+</script>
+</body>
+</html>
